@@ -87,13 +87,32 @@ Complex Complex::operator*(Complex z2)
     return z3;
 }
 
+Complex Complex::operator/(Complex z2)
+{
+    double r1,fi1,r2,fi2,r3,fi3,a3,b3;
+
+    r1 = this->r;
+    fi1 = this->fi;
+    r2 = z2.getR();
+    fi2 = z2.getFi();
+
+    r3 = r1/r2;
+    fi3 = fi1-fi2;
+
+    a3 = r3 * cos(fi3);
+    b3 = r3 * sin(fi3);
+
+    Complex z3(a3,b3);
+
+    return z3;
+}
+
 void Complex::operator=(Complex z)
 {
     this->a = z.getA();
     this->b = z.getB();
     update();
 }
-
 
 Complex Complex::operator+(double d2)
 {
@@ -126,6 +145,21 @@ Complex Complex::operator*(double d2)
 
     a3=(a1*a2)-(b1*b2);
     b3 = a1*b2 + b1*a2;
+
+    Complex z3(a3,b3);
+
+    return z3;
+}
+
+Complex Complex::operator/(double d2)
+{
+    double a1,b1,a3,b3;
+
+    a1 = this->a;
+    b1 = this->b;
+
+    a3 = a1/d2;
+    b3 = b1/d2;
 
     Complex z3(a3,b3);
 

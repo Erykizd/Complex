@@ -12,10 +12,10 @@ void disp(Complex z);
 int main()
 {
     cout << fixed << setprecision(4);
-    Complex z1(1,1);
-    Complex z2(1,6);
+    Complex z1(8,4);
+    Complex z2(2,0);
     Complex z3;
-    z3 = i^2.25;
+    z3 = (z1/z2)+i-(i^2);
 
     cout << "z = ";
     disp(z3);

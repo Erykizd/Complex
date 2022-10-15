@@ -22,6 +22,8 @@ class Complex
         Complex operator-(double d2);
         Complex operator*(Complex z2);
         Complex operator*(double d2);
+        Complex operator/(Complex z2);
+        Complex operator/(double d2);
         Complex operator^(double p);
         void operator=(Complex z);
         void operator=(double d);

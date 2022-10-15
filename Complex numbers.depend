@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1665849829 source:d:\c++ scripts\complex numbers\main.cpp
+1665852861 source:d:\c++ scripts\complex numbers\main.cpp
 	<iostream>
 	<cmath>
 	<iomanip>
@@ -11,9 +11,9 @@
 
 1665829923 d:\c++ scripts\complex numbers\include\c.h
 
-1665848921 d:\c++ scripts\complex numbers\include\complex.h
+1665851582 d:\c++ scripts\complex numbers\include\complex.h
 
-1665848930 source:d:\c++ scripts\complex numbers\src\complex.cpp
+1665852496 source:d:\c++ scripts\complex numbers\src\complex.cpp
 	"Complex.h"
 	<iostream>
 	<cmath>
